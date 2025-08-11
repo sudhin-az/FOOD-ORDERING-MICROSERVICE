@@ -1,3 +1,0 @@
-syntax = "proto3";
-package user;
-option go_package = "github.com/sudhin-az/FOOD-ORDERING"

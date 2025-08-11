@@ -1,7 +1,0 @@
-syntax = "proto3";
-package user;
-option go_package = "github.com/sudhin-az/FOOD-ORDERING/user-service/proto";
-
-service UserService {
-    rpc CreateUser (CreateUserReques) returns (CreateUserResponse)
-}

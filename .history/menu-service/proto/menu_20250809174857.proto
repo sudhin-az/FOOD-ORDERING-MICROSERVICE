@@ -1,7 +1,0 @@
-syntax = "proto3";
-package menu;
-option go_package = "github.com/sudhin-az/FOOD-ORDERING/menu-service/proto";
-
-service MenuService {
-    
-}
