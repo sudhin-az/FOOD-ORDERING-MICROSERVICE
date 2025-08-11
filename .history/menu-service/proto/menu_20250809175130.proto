@@ -1,0 +1,23 @@
+syntax = "proto3";
+package menu;
+option go_package = "github.com/sudhin-az/FOOD-ORDERING/menu-service/proto";
+
+service MenuService {
+    rpc AddItem (AddItemRequest) returns (AddItemResponse);
+    rpc GetAllItems (Empty) returns (ItemList);
+}
+
+message AddItemRequest {
+    string name = 1;
+    double price = 2;
+}
+
+message AddItemResponse {
+    string id = 1;
+    string name = 2;
+    double price = 3;
+}
+
+message Item {
+    
+}

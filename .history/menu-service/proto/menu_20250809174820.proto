@@ -1,0 +1,3 @@
+syntax = "proto3";
+package menu;
+option go_package = "github.com/sudhin-az"

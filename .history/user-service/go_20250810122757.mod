@@ -1,0 +1,1 @@
+go mod  github.com/sudhin-az/FOOD-ORDERING/user-service

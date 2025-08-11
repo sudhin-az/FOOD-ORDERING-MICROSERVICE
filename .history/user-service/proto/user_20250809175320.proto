@@ -1,0 +1,28 @@
+syntax = "proto3";
+package user;
+option go_package = "github.com/sudhin-az/FOOD-ORDERING/user-service/proto";
+
+service UserService {
+    rpc CreateUser (CreateUserRequest) returns (CreateUserResponse);
+    rpc GetAllUsers (Empty) returns (UserList);
+}
+
+message CreateUserRequest {
+    string name = 1;
+    string email = 2;
+}
+
+message CreateUserResponse {
+    
+}
+
+message User {
+    string id = 1;
+    string name = 2;
+    string email = 3;
+}
+message UserList {
+    repeated User users = 1;
+}
+
+message Empty{}
